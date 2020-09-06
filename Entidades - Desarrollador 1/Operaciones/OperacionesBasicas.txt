@@ -1,0 +1,4 @@
+public bool siEsPar(int numero){
+    int residuo = numero % 2;
+    return residuo == 0;
+}
