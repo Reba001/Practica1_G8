@@ -1,0 +1,35 @@
+Public class Login{
+
+	@PostConstruct
+	Void cargar(){}
+	
+	@PreDestroy
+	Void eliminar(){}
+	
+	public void LoginListener(){
+		Procesos.Login(this.user, this.pass);
+		Util.crearMensaje("Login exitoso", SEVERITY_INFO);
+	}
+	catch(Exception e)
+	{
+		Util.crearMensaje("Login erroneo", SEVERITY_ERROR);
+	}
+
+	public String getPass() {
+		return pass;
+	}
+	
+	public void setPass(String pass){
+		this.pass = pass;
+	}
+
+	public String getUser() {
+		return user;
+	}
+	
+	public void setUser(String user){
+		this.user = user;
+	}
+
+}
+
