@@ -25,7 +25,8 @@ ublic void area_triangulo(int base, int altura)
 				int area_triangulo = (base*altura)/2
 				return area_triangulo;
 		   }
-public  boolean esPrimo(int numero){
+public  boolean esPrimo(int n1,int n2,int n3){
+  int numero = n1+n2+n3;
   int contador = 2;
   boolean primo=true;
   while ((primo) && (contador!=numero)){
