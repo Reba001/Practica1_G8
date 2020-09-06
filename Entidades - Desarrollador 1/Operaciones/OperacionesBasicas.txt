@@ -34,3 +34,12 @@ public  boolean esPrimo(int numero){
   }
   return primo;
 }
+public int sumatoria_sucesiva(int n){
+	int resultado = 0;
+	for(int x = 0; i <= n; i++)
+	{
+		resultado = resultado + x;
+	}
+	
+	return resultado;
+}
