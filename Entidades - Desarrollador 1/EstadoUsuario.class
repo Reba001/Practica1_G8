@@ -1,0 +1,25 @@
+public class EstadoUsuario{
+    private int codEstado;
+    private String descripcion;
+    
+    public EstadoUsuario(int codEstado, String descripcion){
+		this.codEstado = codEstado;
+		this.descripcion = descripcion;
+    }
+
+    public int getCodEstado(){
+        return this.codEstado;
+    }
+
+    public string getDescripcion(){
+        return this.descripcion;
+    }
+
+    public void setCodEstado(int codEstado){
+        this.codEstado = codEstado;    
+    }
+
+    public void setPassword(String descripcion){
+        this.password = descripcion;
+    }
+}

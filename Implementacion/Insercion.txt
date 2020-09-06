@@ -1,0 +1,7 @@
+user = new Usuario();
+
+string nombre;
+string password;
+
+setUsername(nombre);
+setPassword(password);

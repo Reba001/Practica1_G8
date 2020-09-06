@@ -1,0 +1,13 @@
+public class Registro{
+    public Usuario Registro(String user, String pass){
+        Usuario usuario = UsuarioImpl.find(user);
+        if( usuario != null ){
+            UsuarioImpl.registro(user, pass);
+            DoLogger.log().info("Usuario ingresado");
+        }else{
+            DoLogger.log().info("Usuario ya existe");    
+        }
+        
+        return usuario;
+    }
+}
