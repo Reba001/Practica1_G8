@@ -6,7 +6,7 @@ public bool siEsPar(int numero){
 
 int fibonacci(int n)
 {
-    if (n>1){
+    if (n<100){
        return fibonacci(n-1) + fibonacci(n-2);  //función recursiva
     }
     else if (n==1) {  // caso base
