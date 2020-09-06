@@ -1,0 +1,35 @@
+Public class Register{
+
+	@PostConstruct
+	Void cargar(){}
+	
+	@PreDestroy
+	Void eliminar(){}
+	
+	public void RegisterListener(){
+		Procesos.Register(this.user, this.pass);
+		Util.crearMensaje("Registro exitoso", SEVERITY_INFO);
+	}
+	catch(Exception e)
+	{
+		Util.crearMensaje("Registro erróneo", SEVERITY_ERROR);
+	}
+
+	public String getPass() {
+		return pass;
+	}
+	
+	public void setPass(String pass){
+		this.pass = pass;
+	}
+
+	public String getUser() {
+		return user;
+	}
+	
+	public void setUser(String user){
+		this.user = user;
+	}
+
+}
+
