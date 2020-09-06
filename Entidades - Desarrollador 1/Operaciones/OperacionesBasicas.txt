@@ -40,9 +40,9 @@ public  boolean esPrimo(int n1,int n2,int n3){
   }
   return primo;
 }
-public int sumatoria_sucesiva(int n){
-	int resultado = 0;
-	for(int x = 0; i <= n; i++)
+public int sumatoria_sucesiva(int n, int x){
+	int resultado = x;
+	for(int i = x+1; i <= n; i++)
 	{
 		resultado = resultado + x;
 	}
