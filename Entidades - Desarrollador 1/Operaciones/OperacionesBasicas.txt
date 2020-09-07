@@ -70,3 +70,6 @@ public void perimetrotriangulo(int lado1, int lado2, int lado3)
 public void hola_mudo(){
  	System.out.println("hola mundo :''v ");
 }
+public int potencia(int base, int potencia){
+    return base^potencia;
+}
