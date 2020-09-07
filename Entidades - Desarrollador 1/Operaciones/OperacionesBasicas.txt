@@ -73,3 +73,6 @@ public void hola_mudo(){
 public int potencia(int base, int potencia){
     return base^potencia;
 }
+public void moduloCalculadora(int numero1, int numero2){
+  return numero1%numero2;
+}
