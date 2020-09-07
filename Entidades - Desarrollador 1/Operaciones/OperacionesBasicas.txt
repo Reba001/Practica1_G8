@@ -49,3 +49,30 @@ public int sumatoria_sucesiva(int n, int x){
 	
 	return resultado;
 }
+
+public int raiz(int x)
+{
+	int raiz=1;
+	while((raiz+1)*(raiz+1) < = x)
+	{
+		raiz = raiz+1;
+	}
+	return raiz;
+}
+
+public void perimetrotriangulo(int lado1, int lado2, int lado3)
+{
+	int perimetro = lado1 + lado2 + lado3;
+	System.out.println("Perimetro: " + perimetro);
+}
+
+
+public void hola_mudo(){
+ 	System.out.println("hola mundo :''v ");
+}
+public int potencia(int base, int potencia){
+    return base^potencia;
+}
+public void moduloCalculadora(int numero1, int numero2){
+  return numero1%numero2;
+}
