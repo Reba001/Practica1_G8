@@ -1,11 +1,12 @@
 public bool siEsPar(int numero){
     int residuo = numero % 2;
+    System.out.println("Es numero par");
     return residuo == 0;
 }
 
 int fibonacci(int n)
 {
-    if (n>1){
+    if (n<100){
        return fibonacci(n-1) + fibonacci(n-2);  //función recursiva
     }
     else if (n==1) {  // caso base
@@ -19,12 +20,17 @@ int fibonacci(int n)
         return -1; 
     }
 }
-ublic void area_triangulo(int base, int altura)
-		   {
-				int area_triangulo = (base*altura)/2
-				return area_triangulo;
+
+public void area_triangulo(int base, int altura)
+		   {	
+				System.out.println("Base: " + base);
+				System.out.println("Altura: " + altura);
+				int area_triangulo = (base*altura)/2;
+				System.out.println("Area " + area_triangulo);
 		   }
-public  boolean esPrimo(int numero){
+		   
+public  boolean esPrimo(int n1,int n2,int n3){
+  int numero = n1+n2+n3;
   int contador = 2;
   boolean primo=true;
   while ((primo) && (contador!=numero)){
@@ -34,9 +40,9 @@ public  boolean esPrimo(int numero){
   }
   return primo;
 }
-public int sumatoria_sucesiva(int n){
-	int resultado = 0;
-	for(int x = 0; i <= n; i++)
+public int sumatoria_sucesiva(int n, int x){
+	int resultado = x;
+	for(int i = x+1; i <= n; i++)
 	{
 		resultado = resultado + x;
 	}

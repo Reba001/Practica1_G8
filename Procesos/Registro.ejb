@@ -1,6 +1,9 @@
 public class Registro{
     public Usuario Registro(String user, String pass){
         Usuario usuario = UsuarioImpl.find(user);
+        usuario.getEstadoUsuario().valores.activo.name();
+        usuario.getEstadoUsuario().valores.Activo();        
+        usuario.setEstadoUsuario();
         if( usuario != null ){
             UsuarioImpl.registro(user, pass);
             DoLogger.log().info("Usuario ingresado");

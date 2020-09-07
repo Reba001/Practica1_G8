@@ -28,7 +28,8 @@ Public class Login{
 	}
 	
 	public void setUser(String user){
-		this.user = user;
+		if(!user.equals("")) //verifica que el username no venga nullo o vacio :'v
+			this.user = user;
 	}
 
 }

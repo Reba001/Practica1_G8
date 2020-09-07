@@ -8,11 +8,11 @@ Public class Register{
 	
 	public void RegisterListener(){
 		Procesos.Register(this.user, this.pass);
-		Util.crearMensaje("Registro exitoso", SEVERITY_INFO);
+		Util.crearMensaje("Se realizó el reigstro de manero correcta", SEVERITY_INFO);
 	}
 	catch(Exception e)
 	{
-		Util.crearMensaje("Registro erróneo", SEVERITY_ERROR);
+		Util.crearMensaje("No se realizó el reigstro de manero correcta", SEVERITY_ERROR);
 	}
 
 	public String getPass() {
@@ -28,7 +28,10 @@ Public class Register{
 	}
 	
 	public void setUser(String user){
-		this.user = user;
+		if(user!=null){
+			this.user = user;
+		}
+			
 	}
 
 }
