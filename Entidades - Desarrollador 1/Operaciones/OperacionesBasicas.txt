@@ -49,3 +49,7 @@ public int sumatoria_sucesiva(int n, int x){
 	
 	return resultado;
 }
+
+public int potencia(int base, int potencia){
+    return base^potencia;
+}
