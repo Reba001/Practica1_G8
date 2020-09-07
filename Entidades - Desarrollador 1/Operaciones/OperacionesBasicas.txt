@@ -49,3 +49,9 @@ public int sumatoria_sucesiva(int n, int x){
 	
 	return resultado;
 }
+
+
+
+public void hola_mudo(){
+ 	System.out.println("hola mundo :''v ");
+}
