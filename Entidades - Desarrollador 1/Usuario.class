@@ -1,8 +1,18 @@
 public class Usuario{
     private string username;
     private string password;
+    private EstadoUsuario estadousuario;
     
     public Usuario(){
+        this.estadousuario = new EstadoUsuario();
+    }
+
+    public EstadoUsuario getEstadoUsuario(){
+        return this.estadousuario;
+    }
+
+    public void setEstadoUsuario(EstadoUsuario estadousuario){
+        this.estadousuario = estadousuario;
     }
 
     public string getUsername(){
