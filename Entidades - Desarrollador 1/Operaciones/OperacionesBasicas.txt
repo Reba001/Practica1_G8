@@ -49,3 +49,13 @@ public int sumatoria_sucesiva(int n, int x){
 	
 	return resultado;
 }
+
+public int raiz(int x)
+{
+	int raiz=1;
+	while((raiz+1)*(raiz+1) < = x)
+	{
+		raiz = raiz+1;
+	}
+	return raiz;
+}
