@@ -28,7 +28,10 @@ Public class Register{
 	}
 	
 	public void setUser(String user){
-		this.user = user;
+		if(user!=null){
+			this.user = user;
+		}
+			
 	}
 
 }
